@@ -11,6 +11,7 @@
  - [x] Alien Spaceship - The alien spaceships are located at the top of the screen. They move horizontally and, when they reach the edge of the playing field, they descend to the next row, gradually approaching the player.
  - [x] Player collisions - If the player collides with an alien ship or a laser beam, the player dies.
  - [x] Lives - The player has an amount of lives, which decreases each time he dies.
+ - [x] Levels - In total there are 3 levels to win the game. Every time you level up the difficulty intensifies, increasing the number of alien ships, the speed they move, and the number of shots.
  - [x] Game Over - When the player runs out of lives, the game ends.
  - [x] Instructions - A page showing the basic controls for the game.
  - [x] SoundTrack - Playing background music when the user is playing
