@@ -108,13 +108,11 @@ public class Game {
                     }
                 }
 
+                screen.refresh();
 
-                screen.close();
             }
-
-
         }
-
+        screen.close();
 
     }
 
@@ -189,6 +187,7 @@ public class Game {
                     audioPlayer.stopBackgroundAudio();
                     key.getKeyType();
                     break;
+
                 }
 
                 this.arena.processKey(key);
@@ -293,7 +292,7 @@ public class Game {
                     shotTimer = 300;
                     shotNumb = 3;
                     moveTimer = 60;
-                    createElements.createAlienFleet(10, 2); //25 5
+                    createElements.createAlienFleet(25, 5);
                     playedLevelTwo = true;
                 }
                 case 3 -> {
@@ -307,7 +306,7 @@ public class Game {
                     shotTimer = 10;
                     shotNumb = 5;
                     moveTimer = 30;
-                    createElements.createAlienFleet(10, 3); // 30 6
+                    createElements.createAlienFleet(30, 6);
                 }
                 case 4 -> {
                     for (int i = 0; i <= 1; i++) {

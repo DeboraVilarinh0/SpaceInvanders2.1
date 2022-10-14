@@ -57,6 +57,7 @@ public class Verifications {
 
     public int level(List<AlienFleet> alienFleet, long runTimer) {
         if (alienFleet.isEmpty() && runTimer == 80) {
+            level +=1;
             return level;
         }
         return 0;
