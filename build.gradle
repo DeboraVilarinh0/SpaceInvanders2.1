@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'info.solidsoft.pitest' version '1.6.0'
+}
+
+group 'spaceInvaders'
+version '1.0-SNAPSHOT'
+
+pitest {
+    junit5PluginVersion = '0.12'
+    pitestVersion = '1.7.4'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.mockito:mockito-core:3.7.7'
+    testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+    testImplementation 'org.codehaus.groovy:groovy-all:3.0.8'
+    implementation group: 'com.googlecode.lanterna', name: 'lanterna', version: '3.1.1'
+
+}
+
+application {
+    mainClass.set("spaceInvaders.Application")
+}
+
+test {
+    useJUnitPlatform()
+}
